@@ -1,0 +1,117 @@
+/*全局CSS开始*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: ""Microsoft YaHei",微软雅黑,arial,tahoma,宋体";
+}
+
+body{
+	background-color: #333333;
+}
+/*全局CSS结束*/
+
+
+/*标题CSS开始*/
+.divTitle{
+	width: 100%;
+	height: 40px;
+	background-color: #0b3075;
+	/*box-sizing: border-box;*/
+	text-align: center;
+}
+
+.divTitle span
+{
+	text-align: left;
+	display: inline-block;
+	width: 1110px;
+	line-height: 40px;
+	color: #ffffff;
+}
+/*标题CSS结束*/
+
+/*菜单CSS开始*/
+.divMenu{
+	width: 1440px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.divMenu div{
+	width: 1110px;
+	margin: 0 auto;
+	line-height: 100px;
+	height: 100px;
+	background-color: pink;
+}
+
+.divMenu img{
+	vertical-align: middle;
+	width: 400px;
+	height: 80px;
+}
+
+
+.ulMainMenu{
+	display: inline-block;
+	background-color: lightgreen;
+	width: 710px;
+	height: 100px;
+}
+
+
+.ulMainMenu>li{
+	display: inline-block;
+	width: 101px;
+	height: 100px;
+	background-color: lightblue;
+}
+
+.ulMainMenu>li>a{
+	display: block;
+	width: 101px;
+	height: 100px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #0b3075;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.ulMainMenu>li>a:hover, .ulMainMenu>li>a:active{
+	color: #fe700c;
+	background-color: #F5F5F5; 
+}
+
+.ulSubMenu{
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	background-color: #0D377C;
+	opacity: 0.9;
+}
+
+.ulMainMenu>li:hover>.ulSubMenu{
+	display: block;
+}
+
+.ulSubMenu>li{
+	line-height: 40px;
+	width: 200px;
+}
+
+.ulSubMenu>li>a{
+	display: block;
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #0D377C;
+}
+
+.ulSubMenu>li>a:hover, .ulSubMenu>li>a:active{
+	background-color: #08295C;
+}
+
+/*菜单CSS结束*/
