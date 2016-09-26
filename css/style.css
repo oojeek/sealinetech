@@ -38,7 +38,7 @@ body{
 	background-color: #ffffff;
 }
 
-.divMenu div{
+.divMenu>div{
 	width: 1110px;
 	margin: 0 auto;
 	line-height: 100px;
@@ -68,6 +68,29 @@ body{
 	background-color: lightblue;
 }
 
+.divBg{
+	width: 101px;
+	height: 100px;
+	background-color: #000000;
+	position: absolute;
+	z-index: 0;
+	opacity: 0.05;
+	transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-moz-transition: height 0.3s;	/* Firefox 4 */
+	-webkit-transition: height 0.3s;	/* Safari 和 Chrome */
+	-o-transition: height 0.3s;
+}
+
+.divBg:hover{
+	height: 100px;
+	border: 1px solid blue;
+}
+
+.divBg:hover+a{
+	color: #fe700c;
+}
+
 .ulMainMenu>li>a{
 	display: block;
 	width: 101px;
@@ -79,21 +102,28 @@ body{
 	text-align: center;
 }
 
-.ulMainMenu>li>a:hover, .ulMainMenu>li>a:active{
+.ulMainMenu>li>a:hover{
 	color: #fe700c;
-	background-color: #F5F5F5; 
 }
 
 .ulSubMenu{
 	list-style-type: none;
-	display: none;
+	display: block;
+	max-height: 0;
 	position: absolute;
 	background-color: #0D377C;
 	opacity: 0.9;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	-ms-transition: max-height 0.3s;
+	-moz-transition: max-height 0.3s;	/* Firefox 4 */
+	-webkit-transition: max-height 0.3s;	/* Safari 和 Chrome */
+	-o-transition: max-height 0.3s;
 }
 
 .ulMainMenu>li:hover>.ulSubMenu{
 	display: block;
+	max-height: 200px;
 }
 
 .ulSubMenu>li{
